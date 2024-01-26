@@ -2,15 +2,15 @@
 
 enum months
 {
-  january = 1,
-  feb,
+  January = 1,
+  February,
   march,
   april,
   may,
   june,
   july,
   august,
-  sentebryary,
+  September,
   october,
   november,
   december
@@ -23,9 +23,9 @@ int main() {
     std::cin >> number;
     if(number >=1 && number <= 12){
       switch (static_cast<months>(number)){
-        case january: std::cout << "Январь\n";
+        case January: std::cout << "Январь\n";
           break;
-        case feb: std::cout << "Февраль\n";
+        case February: std::cout << "Февраль\n";
           break;
         case march: std::cout << "Март\n";
           break;
@@ -39,7 +39,7 @@ int main() {
           break;
         case august: std::cout << "Август\n";
           break;
-        case sentebryary: std::cout << "Сентябрь\n";
+        case September: std::cout << "Сентябрь\n";
           break;
         case october: std::cout << "Октябрь\n";
           break;
