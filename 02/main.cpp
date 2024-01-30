@@ -7,6 +7,10 @@ struct BankAccount{
   std::string customerName = "Alex";
 };
 
+void changeBal(BankAccount& account, double newBalance){
+  account.balance = newBalance;
+}
+
 int main() {
   BankAccount acc1;
   
@@ -26,7 +30,7 @@ int main() {
       if(printBalOld == acc1.balance){
         std::cout << "Введите новый баланс: ";
         std::cin >> printBalNew;
-          acc1.balance = printBalNew;
+        changeBal(acc1,printBalNew);
         std::cout << "Ваш Счёт: " << acc1.customerName<< ", " <<acc1.accountNumber<< ", " <<acc1.balance<< ", " << "\n";
       }else{
         std::cout << "Неверный баланс. Обновите страницу и попробуйте еще раз.\n";
